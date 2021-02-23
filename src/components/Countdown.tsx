@@ -6,17 +6,25 @@ interface Props {}
 
 function Countdown(): ReactElement<Props> {
   return (
-    <div className={styles.countdown_container}>
-      <div>
-        <span>2</span>
-        <span>5</span>
+    <div>
+      <div className={styles.countdown_container}>
+        <div>
+          <span>2</span>
+          <span>5</span>
+        </div>
+
+        <span>:</span>
+
+        <div>
+          <span>0</span>
+          <span>0</span>
+        </div>
       </div>
 
-      <span>:</span>
-
       <div>
-        <span>0</span>
-        <span>0</span>
+        <button className={styles.countdown_button} type="button">
+          Start a cicle
+        </button>
       </div>
     </div>
   );
