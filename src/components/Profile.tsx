@@ -11,7 +11,10 @@ function Profile(): ReactElement<Props> {
 
       <div>
         <strong>Pedro Klepa</strong>
-        <p>Level 1</p>
+        <p>
+          <img src="icons/level.svg" alt="Level" />
+          Level 1
+        </p>
       </div>
     </div>
   );

@@ -18,8 +18,14 @@
     }
 
     p {
+      display: flex;
+      align-items: center;
       font-size: 1rem;
       margin-top: 0.5rem;
+
+      img {
+        margin-right: 0.5rem;
+      }
     }
   }
 }
