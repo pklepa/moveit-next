@@ -1,0 +1,30 @@
+.experience-bar {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 1rem;
+  }
+
+  > div {
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--grey);
+
+    margin: 0 1.5rem;
+    position: relative;
+
+    .current-xp-bar {
+      height: 4px;
+      border-radius: 4px;
+      background-color: var(--green);
+    }
+
+    .current-xp-text {
+      position: absolute;
+      top: 12px;
+      transform: translateX(-50%);
+    }
+  }
+}
