@@ -1,4 +1,4 @@
-.experience-bar {
+.experience_bar {
   display: flex;
   align-items: center;
 
@@ -15,13 +15,13 @@
     margin: 0 1.5rem;
     position: relative;
 
-    .current-xp-bar {
+    .current_xp_bar {
       height: 4px;
       border-radius: 4px;
       background-color: var(--green);
     }
 
-    .current-xp-text {
+    .current_xp_text {
       position: absolute;
       top: 12px;
       transform: translateX(-50%);
