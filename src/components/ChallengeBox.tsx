@@ -6,7 +6,7 @@ import styles from '../styles/components/ChallengeBox.module.scss';
 interface Props {}
 
 function ChallengeBox(): ReactElement<Props> {
-  const { activeChallenge } = useContext(ChallengesContext);
+  const { activeChallenge, resetChallenge } = useContext(ChallengesContext);
 
   return (
     <div className={styles.challengeBoxContainer}>
@@ -21,7 +21,11 @@ function ChallengeBox(): ReactElement<Props> {
           </main>
 
           <footer>
-            <button type="button" className={styles.challengeSkipBtn}>
+            <button
+              onClick={resetChallenge}
+              type="button"
+              className={styles.challengeSkipBtn}
+            >
               Skip
             </button>
             <button type="button" className={styles.challengeDoneBtn}>
