@@ -1,0 +1,80 @@
+[
+  {
+    "type": "body",
+    "description_pt": "Estique um de seus braços com a palma da mão virada para frente e puxe os dedos para cima por 10 segundos por mão.",
+    "description": "Strech one of your arms ahead of you with the palm facing forwards and pull your fingers in your direction for 10 seconds in each hand.",
+    "amount": 80
+  },
+  {
+    "type": "body",
+    "description_pt": "Estique seu braço contra o peito e puxe-o utilizando o outro braço por 10 segundos por braço.",
+    "description": "Strech your arm against the chest and with the other arm pull it against you for 10 seconds each arm.",
+    "amount": 60
+  },
+  {
+    "type": "body",
+    "description_pt": "Puxe seu pescoço com a ajuda da mão para a direita e para a esquerda, permanecendo na posição por alguns segundos.",
+    "description": "With the help of your right hand, gently pull your neck sideways to the left for about 6 seconds. Repeat the process on the other side.",
+    "amount": 70
+  },
+  {
+    "type": "body",
+    "description_pt": "Com as duas mãos na parte de trás da cabeça, leve-a para baixo, alongando a parte de trás da região.",
+    "description": "With both hands on the back of your head, pull it downwards, streching the backside of the region.",
+    "amount": 60
+  },
+  {
+    "type": "body",
+    "description_pt": "Cruze as pernas e desça com as mãos esticadas em direção ao chão. Repita o movimento com a outra perna na frente.",
+    "description": "Sit down on the floor with crossed legs and, streching your hands fowards, lower yourself to the ground. Repeat the process with one leg streched ahead.",
+    "amount": 100
+  },
+  {
+    "type": "body",
+    "description_pt": "Sentado, abra as pernas e tente encostar as palmas das mãos no chão, repita 3 vezes por 5 segundos.",
+    "description": "On the flor, sit down with your legs wide open and try to touch the palm of your hands on the ground with your arms streched. Repeat 3 times, holding for 5 seconds each.",
+    "amount": 80
+  },
+  {
+    "type": "body",
+    "description_pt": "Puxe o joelho de encontro ao peito e segure, troque de perna após 10 segundos.",
+    "description": "Pull your knee into your chest and hold for 10 seconds. Repeat for the other leg.",
+    "amount": 50
+  },
+  {
+    "type": "body",
+    "description_pt": "Sentado, cruze uma perna e incline seu tronco à frente, troque de perna após 10 segundos.",
+    "description": "On the floor, cross one leg and slowly lower your upper body fowards for 10 seconds. Repeat for the other leg as well.",
+    "amount": 80
+  },
+  {
+    "type": "eye",
+    "description_pt": "Sentado, feche os olhos e cubra-os com as palmas da mão durante 2 minutos, depois abra normalmente.",
+    "description": "Close your eyes and put the palm of your hands ontop of each of them as to cover and relax. Hold for 2 minutes.",
+    "amount": 90
+  },
+  {
+    "type": "eye",
+    "description_pt": "Em algum ambiente aberto, olhe o mais longe que puder em quatro direções por 3s, mexa apenas os olhos. Repita 3 vezes.",
+    "description": "In an open environment, look the furtherst you can in four directions moving only your eyes and hold for 3 seconds. Repeat it three times.",
+    "amount": 140
+  },
+  {
+    "type": "eye",
+    "description_pt": "Usando os polegares, massage a área abaixo das sobrancelhas em movimentos circulares por 15 segundos.",
+    "description": "Using your thumbs, massage the region right below your eyebrowns using circular movements for 15 seconds.",
+    "amount": 70
+  },
+  {
+    "type": "body",
+    "description_pt": "Em pé, gire a cintura o máximo que puder para a esquerda, segure por cinco segundos. Repita para a direita.",
+    "description": "Standing, turn your waist clockwise and hold for 5 seconds. Repeat the process counter-clockwise as well.",
+    "amount": 90
+  },
+  {
+    "type": "body",
+    "description_pt": "Levante-se e faça uma lenta caminhada de no mínimo 3 minutos.",
+    "description": "Get up and take a slow walk for at least 3 minutes.",
+    "amount": 150
+  }
+]
