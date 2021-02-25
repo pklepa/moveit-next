@@ -56,9 +56,57 @@
   font-size: 1.25rem;
   font-weight: 600;
 
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('/icons/play_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: center;
+  }
 
   &:hover {
     background: var(--blue-dark);
+  }
+
+  &.active {
+    background-color: var(--white);
+    color: var(--text-title);
+
+    &:hover {
+      background-color: var(--red);
+      color: var(--text-white);
+
+      span {
+        background-image: url('/icons/close_white.svg');
+      }
+    }
+
+    span {
+      background-image: url('/icons/close.svg');
+    }
+  }
+
+  &.complete {
+    background-color: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
+    border-bottom: 4px solid var(--green);
+
+    &:hover {
+      background: var(--white);
+    }
+
+    span {
+      background-image: url('/icons/check_circle.svg');
+    }
   }
 }
