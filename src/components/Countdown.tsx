@@ -1,17 +1,19 @@
-import { ReactElement, useEffect, useState } from 'react';
+import { ReactElement, useContext, useEffect, useState } from 'react';
+import { ChallengesContext } from '../contexts/ChallengesContext';
 
 import styles from '../styles/components/Countdown.module.scss';
 
 interface Props {}
 
 function Countdown(): ReactElement<Props> {
+  const { startNewChallenge } = useContext(ChallengesContext);
+
   const DEFAULT_TIME: number = 0.1;
+  let countdownTimeout: NodeJS.Timeout;
 
   const [time, setTime] = useState(DEFAULT_TIME * 60);
   const [isTimerActive, setIsTimerActive] = useState(false);
   const [hasFinished, setHasFinished] = useState(false);
-
-  let countdownTimeout: NodeJS.Timeout;
 
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
@@ -37,6 +39,7 @@ function Countdown(): ReactElement<Props> {
     } else if (isTimerActive && time === 0) {
       setHasFinished(true);
       setIsTimerActive(false);
+      startNewChallenge();
     }
   }, [isTimerActive, time]);
 
