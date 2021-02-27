@@ -9,21 +9,19 @@ function ExperienceBar(): ReactElement<Props> {
     ChallengesContext
   );
 
-  const percentToNextLevel = Math.round(
-    (currentExperience * 100) / experienceToNextLevel
-  );
-
+  const percentToNextLevel =
+    Math.round(currentExperience * 100) / experienceToNextLevel;
   return (
     <header className={styles.experience_bar}>
       <span>0 xp</span>
       <div>
         <div
           className={styles.current_xp_bar}
-          style={{ width: `${percentToNextLevel}` }}
+          style={{ width: `${percentToNextLevel}%` }}
         ></div>
         <span
           className={styles.current_xp_text}
-          style={{ left: `${percentToNextLevel}` }}
+          style={{ left: `${percentToNextLevel}%` }}
         >
           {currentExperience} xp
         </span>
