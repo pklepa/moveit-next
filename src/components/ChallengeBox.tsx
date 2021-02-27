@@ -1,14 +1,26 @@
 import { ReactElement, useContext } from 'react';
 import { ChallengesContext } from '../contexts/ChallengesContext';
+import { CountdownContext } from '../contexts/CountdownContext';
 
 import styles from '../styles/components/ChallengeBox.module.scss';
 
 interface Props {}
 
 function ChallengeBox(): ReactElement<Props> {
+  const { resetCountdown } = useContext(CountdownContext);
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(
     ChallengesContext
   );
+
+  function handleChallengeCompleted() {
+    completeChallenge();
+    resetCountdown();
+  }
+
+  function handleChallengeSkipped() {
+    resetChallenge();
+    resetCountdown();
+  }
 
   return (
     <div className={styles.challengeBoxContainer}>
@@ -24,14 +36,14 @@ function ChallengeBox(): ReactElement<Props> {
 
           <footer>
             <button
-              onClick={resetChallenge}
+              onClick={handleChallengeSkipped}
               type="button"
               className={styles.challengeSkipBtn}
             >
               Skip
             </button>
             <button
-              onClick={completeChallenge}
+              onClick={handleChallengeCompleted}
               type="button"
               className={styles.challengeDoneBtn}
             >
